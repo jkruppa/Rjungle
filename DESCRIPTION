@@ -1,8 +1,11 @@
-Package: rjungle
-Title: 
-Description: 
-Version: 0.1
-Authors@R: # getOptions('devtools.desc.author')
-Depends: R (>= 3.0.2)
-License: # getOptions('devtools.desc.license')
-LazyData: true
+Package: Rjungle
+Version: 0.1-4
+Date: 2010-09-07
+Title: Random Jungle in R
+Author: Daniel F Schwarz 
+Maintainer: Daniel F Schwarz <daniel@randomjungle.com>
+Depends: R (>= 2.9.2), methods, MASS
+Description: Generalised Implementation of Random Forest.
+License: GPL (>= 2)
+URL: http://www.randomjungle.org
+Packaged: 2012-07-20 11:35:01 UTC; abhs

@@ -1,0 +1,22 @@
+#useDynLib(libRjungle)
+
+import(methods)
+importClasses(methods)
+
+import(MASS)
+
+export(
+  rjungle,
+  importance,
+  importance.rjungle,
+	confusion,
+  predict.rjungle,
+  plotMDS,
+  impute
+)
+
+exportClasses("rjungle")
+
+
+S3method(importance, rjungle)
+S3method(predict, rjungle)
