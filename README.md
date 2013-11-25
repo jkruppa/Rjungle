@@ -3,9 +3,15 @@ rjungle
 
 R package for Random Jungle
 
-How to use
-==========
+Install rjungle
+===============
 
     library(devtools)
     install_github("rjungle", username = "jkruppa")
+    
+
+Further information
+===================
+
+randomjungle.de
 
