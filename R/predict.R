@@ -17,6 +17,15 @@
 library(methods)
 library(stats)
 
+##' .. content for \description{} (no empty lines) ..
+##'
+##' .. content for \details{} ..
+##' @title 
+##' @param object 
+##' @param data 
+##' @param ... 
+##' @return 
+##' @author Jochen Kruppa
 predict.rjungle <- function(object, data, ...) {
   rj = object
   

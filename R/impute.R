@@ -15,6 +15,15 @@
 #
 
 
+##' .. content for \description{} (no empty lines) ..
+##'
+##' .. content for \details{} ..
+##' @title 
+##' @param iterations 
+##' @param options 
+##' @param ... 
+##' @return 
+##' @author Jochen Kruppa
 impute <- function(iterations = 1, options = "", ...
   ) {
   

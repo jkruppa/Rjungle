@@ -14,7 +14,33 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-
+##' .. content for \description{} (no empty lines) ..
+##'
+##' .. content for \details{} ..
+##' @title 
+##' @param depVarName 
+##' @param data 
+##' @param dataFileName 
+##' @param ntree 
+##' @param mtry 
+##' @param treeType 
+##' @param importance 
+##' @param replace 
+##' @param proximity 
+##' @param keepJungle 
+##' @param nthread 
+##' @param seed 
+##' @param fileNameOut 
+##' @param fileNameIn 
+##' @param balanceData 
+##' @param verbose 
+##' @param convertdata 
+##' @param inDir 
+##' @param outDir 
+##' @param options 
+##' @param ... 
+##' @return 
+##' @author Jochen Kruppa
 rjungle <- function(
 		depVarName = "",
 		data = NULL,

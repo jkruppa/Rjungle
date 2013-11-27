@@ -16,6 +16,16 @@
 
 library(methods)
 
+##' .. content for \description{} (no empty lines) ..
+##'
+##' .. content for \details{} ..
+##' @title 
+##' @param rj 
+##' @param printOnly 
+##' @param confusionTable 
+##' @param ... 
+##' @return 
+##' @author Jochen Kruppa
 confusion <- function(rj, printOnly=FALSE,
 		confusionTable = FALSE, #if TRUE then show file *.confusion2
 		...) {

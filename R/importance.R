@@ -23,6 +23,14 @@ if (!exists("importance.default"))
   importance.default <- function(x, ...)
     stop("No method implemented for this class of object")
 
+##' .. content for \description{} (no empty lines) ..
+##'
+##' .. content for \details{} ..
+##' @title 
+##' @param x 
+##' @param ... 
+##' @return 
+##' @author Jochen Kruppa
 importance.rjungle <- function(x, ...) {
   rj = x
   
