@@ -20,12 +20,13 @@ library(stats)
 ##' .. content for \description{} (no empty lines) ..
 ##'
 ##' .. content for \details{} ..
-##' @title 
+##' @title predict
 ##' @param object 
 ##' @param data 
 ##' @param ... 
-##' @return 
+##' @return NULL
 ##' @author Jochen Kruppa
+##' @export
 predict.rjungle <- function(object, data, ...) {
   rj = object
   

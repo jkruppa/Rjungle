@@ -87,6 +87,7 @@
 ##' and Jochen Kruppa
 ##' @seealso \code{\link{importance}}, \code{\link{confusion}}
 ##' @keywords Random Jungle rjungle
+##' @export
 rjungle <- function(
     depVarName = "",
     data = NULL,

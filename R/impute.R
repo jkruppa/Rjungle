@@ -18,12 +18,13 @@
 ##' .. content for \description{} (no empty lines) ..
 ##'
 ##' .. content for \details{} ..
-##' @title 
+##' @title Impute
 ##' @param iterations 
 ##' @param options 
 ##' @param ... 
-##' @return 
+##' @return NULL
 ##' @author Jochen Kruppa
+##' @export
 impute <- function(iterations = 1, options = "", ...
   ) {
   

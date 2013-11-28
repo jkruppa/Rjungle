@@ -19,10 +19,11 @@ library(MASS)
 ##' .. content for \description{} (no empty lines) ..
 ##'
 ##' .. content for \details{} ..
-##' @title 
+##' @title mds
 ##' @param rj 
-##' @return 
+##' @return NULL
 ##' @author Jochen Kruppa
+##' @export
 plotMDS <- function(rj) {
   if (!rj@proximity) stop(RJ__MSG2);
   

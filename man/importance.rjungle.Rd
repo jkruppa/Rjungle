@@ -1,71 +1,39 @@
 \name{importance.rjungle}
 \alias{importance.rjungle}
-%- Also NEED an '\alias' for EACH other topic documented here.
-\title{
-importance
-}
-\description{
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
-}
+\title{importance}
 \usage{
-importance.rjungle(x, ...)
+  importance.rjungle(x, ...)
 }
-%- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{x}{
-%%     ~~Describe \code{x} here~~
-}
-  \item{\dots}{
-%%     ~~Describe \code{\dots} here~~
-}
-}
-\details{
-%%  ~~ If necessary, more details than the description above ~~
+  \item{x}{An object of class \code{rjungle}.}
+
+  \item{...}{}
 }
 \value{
-%%  ~Describe the value returned
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
-%% ...
+  A \code{data.frame}. If \code{\link{rjungle}} was called
+  with \code{imp=2}, rows represent the input variables
+  ordered by index and columns contain Gini index as well
+  as Raw-, Breiman-, Liaw- and Meng-Score, SDs for the
+  Breiman- and Meng-Score, variable names and the number of
+  trees in which the according variable was used for
+  splitting.
 }
-\references{
-%% ~put references to the literature/web site here ~
+\description{
+  Reads importance information from the files produced by
+  the \code{\link{rjungle}} function.
+}
+\details{
+  to add
 }
 \author{
-%%  ~~who you are~~
+  Daniel Schwarz with modifications by Andreas Bender and
+  Jochen Kruppa
 }
-\note{
-%%  ~~further notes~~
+\references{
+  \url{www.randomjungle.de}
 }
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
-
 \seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
+  \code{\link{rjungle}}, \code{\link{confusion}}
 }
-\examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
+\keyword{importance}
 
-## The function is currently defined as
-function(x, ...) {
-  rj = x
-  
-  if (!inherits(rj, "rjungle"))
-    stop("data argument should be rjungle-class")
-  
-	if (rj@importance == 1)  
-		fileName = paste(rj@tmpFile, ".importance", sep = "")
-	else
-		fileName = paste(rj@tmpFile, ".importance2", sep = "")
-  if (!file.exists(fileName))
-    stop(paste("no importance file exists.", fileName))
-  
-  return(read.table(fileName, header = TRUE))
-  }
-}
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ importance}% __ONLY ONE__ keyword per line

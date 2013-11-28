@@ -37,6 +37,7 @@ library(methods)
 ##' and Jochen Kruppa
 ##' @seealso \code{\link{rjungle}}, \code{\link{importance}}
 ##' @keywords confusion
+##' @export
 
 
 confusion <- function(rj, printOnly=FALSE,
