@@ -23,14 +23,24 @@ if (!exists("importance.default"))
   importance.default <- function(x, ...)
     stop("No method implemented for this class of object")
 
-##' .. content for \description{} (no empty lines) ..
+##' Reads importance information from the files produced by the
+##' \code{\link{rjungle}} function.
 ##'
-##' .. content for \details{} ..
-##' @title 
-##' @param x 
+##' to add
+##' @title importance
+##' @param x An object of class \code{rjungle}.
 ##' @param ... 
-##' @return 
-##' @author Jochen Kruppa
+##' @return A \code{data.frame}. If \code{\link{rjungle}} was called with
+##' \code{imp=2},  rows represent the input variables ordered by index and
+##' columns contain  Gini index as well as Raw-, Breiman-, Liaw- and
+##' Meng-Score, SDs for the  Breiman- and Meng-Score, variable names
+##' and the number of trees in which the  according variable was used
+##' for splitting.
+##' @references \url{www.randomjungle.de}
+##' @author Daniel Schwarz with modifications by Andreas Bender
+##' and Jochen Kruppa
+##' @seealso \code{\link{rjungle}}, \code{\link{confusion}}
+##' @keywords importance
 importance.rjungle <- function(x, ...) {
   rj = x
   

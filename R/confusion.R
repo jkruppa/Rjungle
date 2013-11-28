@@ -16,16 +16,29 @@
 
 library(methods)
 
-##' .. content for \description{} (no empty lines) ..
+##' In case of regression tasks confusion returns the total sum of squares (SS),
+##' the SS of residuals and predictor, the prediction accuracy estimate and the
+##' and the error estimate.
 ##'
-##' .. content for \details{} ..
-##' @title 
-##' @param rj 
-##' @param printOnly 
-##' @param confusionTable 
-##' @param ... 
-##' @return 
-##' @author Jochen Kruppa
+##' add here more detail information
+##' @title rjungle
+##' @param rj An object of class \code{rjungle}.
+##' @param printOnly If \code{TRUE}, confusion information is printed to the
+##' screen when rjungle was used for regression tasks. If \code{FALSE}
+##' (default), A \code{vector} with 5 elemnts is returned.  
+##' @param confusionTable The confusion table in case of classification tasks.
+##' @param ... Further arguments; not used at the moment.
+##' @return  For regression tasks either \code{NULL} or a \code{vector} with
+##' elements SS_Residual, SS_Total, SS_Predictor = SS_Total - SS_Residual,
+##' Accuracy Estimate = SS_Predictor/SS_Total and Error Estimate = 1 - Accuracy
+##' Estimate
+##' @references \url{www.randomjungle.de}
+##' @author Daniel F. Schwarz with modifications by Andreas Bender
+##' and Jochen Kruppa
+##' @seealso \code{\link{rjungle}}, \code{\link{importance}}
+##' @keywords confusion
+
+
 confusion <- function(rj, printOnly=FALSE,
 		confusionTable = FALSE, #if TRUE then show file *.confusion2
 		...) {
