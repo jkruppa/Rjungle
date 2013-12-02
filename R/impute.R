@@ -15,9 +15,9 @@
 #
 
 
-##' .. content for \description{} (no empty lines) ..
+##' to add
 ##'
-##' .. content for \details{} ..
+##' to add
 ##' @title Impute
 ##' @param iterations 
 ##' @param options 

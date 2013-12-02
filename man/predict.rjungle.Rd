@@ -15,10 +15,10 @@
   NULL
 }
 \description{
-  .. content for \description{} (no empty lines) ..
+  to add
 }
 \details{
-  .. content for \details{} ..
+  to add
 }
 \author{
   Jochen Kruppa

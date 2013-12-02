@@ -17,9 +17,9 @@
 library(methods)
 library(stats)
 
-##' .. content for \description{} (no empty lines) ..
+##' to add
 ##'
-##' .. content for \details{} ..
+##' to add
 ##' @title predict
 ##' @param object 
 ##' @param data 

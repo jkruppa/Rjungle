@@ -16,9 +16,9 @@
 
 
 library(MASS)
-##' .. content for \description{} (no empty lines) ..
+##' to add
 ##'
-##' .. content for \details{} ..
+##' to add
 ##' @title mds
 ##' @param rj 
 ##' @return NULL
