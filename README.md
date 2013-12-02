@@ -1,4 +1,4 @@
-rjungle
+The R package Rjungle
 =======
 
 R package for Random Jungle
