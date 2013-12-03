@@ -41,6 +41,7 @@ if (!exists("importance.default"))
 ##' and Jochen Kruppa
 ##' @seealso \code{\link{rjungle}}, \code{\link{confusion}}
 ##' @keywords importance
+##' @S3method importance rjungle
 ##' @export
 
 importance.rjungle <- function(x, ...) {

@@ -26,6 +26,7 @@ library(stats)
 ##' @param ... 
 ##' @return NULL
 ##' @author Jochen Kruppa
+##' @S3method predict rjungle
 ##' @export
 predict.rjungle <- function(object, data, ...) {
   rj = object
