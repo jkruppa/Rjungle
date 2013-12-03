@@ -1,17 +1,17 @@
-rjungle
+The R package Rjungle
 =======
 
 R package for Random Jungle
 
-Install rjungle
+Install Rjungle
 ===============
 
     library(devtools)
-    install_github("rjungle", username = "jkruppa")
+    install_github("Rjungle", username = "jkruppa")
     
 
 Further information
 ===================
 
-randomjungle.de
+www.randomjungle.de
 
