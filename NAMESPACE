@@ -1,5 +1,6 @@
 exportClasses(rjungle)
 export(confusion)
+export(importance)
 export(importance.rjungle)
 export(impute)
 export(plotMDS)

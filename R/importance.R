@@ -42,7 +42,7 @@ if (!exists("importance.default"))
 ##' @seealso \code{\link{rjungle}}, \code{\link{confusion}}
 ##' @keywords importance
 ##' @S3method importance rjungle
-##' @export
+##' @export importance importance.rjungle
 
 importance.rjungle <- function(x, ...) {
   rj = x
