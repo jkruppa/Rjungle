@@ -25,6 +25,20 @@ RJ__MSG2 = "No proximity was calculated. Try rjungle(..., proximity = TRUE)"
 RJ__MSG3 = "No jungle/forest was saved. Try rjungle(..., keepJungle = TRUE)"
 RJ__MSG4 = "No imputed file was found."
 
+
+#' The title for my S4 class that extends \code{"character"} class.
+#'
+#' Some details about this class and my plans for it in the body.
+#'
+#' \describe{
+#'    \item{myslot1}{A logical keeping track of something.}
+#'
+#'    \item{myslot2}{An integer specifying something else.}
+#' 
+#'    \item{myslot3}{A data.frame holding some data.}
+#'  }
+#' @name rjungle-class
+#' @exportClass rjungle
 setClass(
   "rjungle",
   representation(
