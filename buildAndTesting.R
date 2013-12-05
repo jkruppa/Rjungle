@@ -1,3 +1,6 @@
+## ------------------------------------------------------------
+## by J.Kruppa on Donnerstag, Dezember  5, 2013 (11:17)
+
 library(devtools)
 library(roxygen2)
 install_github("Rjungle", username = "jkruppa")
