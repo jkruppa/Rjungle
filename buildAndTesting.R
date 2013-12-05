@@ -20,3 +20,12 @@ data(iris)
 
 test <- rjungle("Species", iris, importance = 2, verbose = TRUE)
 importance(test)
+
+## Regression:
+data(airquality)
+set.seed(131)
+ozone.rf <- randomForest(Ozone ~ ., data=airquality, mtry=3,
+                         importance=TRUE, na.action=na.omit)
+print(ozone.rf)
+## Show "importance" of variables: higher value mean more important:
+
