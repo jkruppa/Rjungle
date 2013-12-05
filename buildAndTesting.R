@@ -14,12 +14,22 @@ build(rjungleDir)
 
 ## ------------------------------------------------------------
 ## by J.Kruppa on Mittwoch, Dezember  4, 2013 (15:22)
-library(randomForest)
 library(Rjungle)
 data(iris)
+iris$Species = as.integer(iris$Species)
 
-test <- rjungle("Species", iris, importance = 2, verbose = TRUE)
-importance(test)
+rjungleTest <- rjungle("Species", iris, importance = 3, verbose = TRUE)
+importance(rjungleTest)
+
+predict(rjungleTest, iris)
+
+
+library(randomForest)
+iris.rf <- randomForest(as.factor(Species) ~ ., data=iris, importance=TRUE,
+                        proximity=TRUE)
+print(iris.rf)
+## Look at variable importance:
+importance(iris.rf)
 
 ## Regression:
 data(airquality)
